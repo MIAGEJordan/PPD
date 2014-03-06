@@ -1,7 +1,7 @@
 var http = require('http');// la lib du serveur
 var url = require('url');// la lib pour gérer l'url
 var querystring = require('querystring'); // la lib pour gérer les paramètres de l'url
-//Jordan noob
+//Jordan gros noob
 var port = process.env.port || 8080;
 
 
