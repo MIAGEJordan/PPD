@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1(id="title") Insérer une commande R
+  div.rcommand
+     form(name="rCommandForm",action="/r/sendcommand",method="get")
+        input(type="text",name="command")
+        input(type="submit",value="envoyer") 
