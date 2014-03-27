@@ -7,6 +7,7 @@ var express = require('express');
 var routes = require('./routes');
 var user = require('./routes/user');
 var r = require('./routes/r');
+var traitDon = require('./routes/traitementDonnees');
 var http = require('http');
 var path = require('path');
 
@@ -35,6 +36,8 @@ app.get('/', routes.index);
 app.get('/users', user.list);
 app.get('/r/form', r.form);
 app.get('/r/sendcommand', r.sendcommand);
+// Affichage de la page de traitement des donnees
+app.get('/traitDon/form', traitDon.form);
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
